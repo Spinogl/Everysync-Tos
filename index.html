@@ -56,178 +56,361 @@
   </style>
 </head>
 <body>
-  <!-- Boutons de navigation -->
+  <!-- Language buttons -->
+  <div class="button-container">
+    <button class="button" onclick="setLang('fr')">FR</button>
+    <button class="button" onclick="setLang('en')">EN</button>
+  </div>
+
+  <!-- Navigation buttons -->
   <div class="button-container">
     <button class="button" onclick="showSection('tos')">Terms of Service</button>
     <button class="button" onclick="showSection('privacy')">Privacy Policy</button>
   </div>
-  
-  <!-- Section Terms of Service -->
-<div id="content-tos" class="content">
-  <h1>Conditions d’Utilisation d’Everysync</h1>
-  <p><small>Dernière mise à jour : 05/08/2025</small></p>
 
-  <h2>1. Acceptation des Conditions</h2>
-  <p>En utilisant le bot Discord Everysync (« l’Application »), vous acceptez sans réserve les présentes Conditions d’Utilisation. Si vous refusez ces conditions, veuillez ne pas installer ni utiliser l’Application. Ces conditions constituent un accord légal entre vous et le développeur d’Everysync.</p>
+  <!-- Terms of Service Section -->
+  <div id="content-tos" class="content">
+    <div class="lang lang-fr">
+      <h1>Conditions d’Utilisation d’Everysync</h1>
+      <p><small>Dernière mise à jour : 05/08/2025</small></p>
 
-  <h2>2. Description de l’Application</h2>
-  <p>Everysync est un bot Discord gratuit permettant de synchroniser des messages entre plusieurs serveurs ou salons. Les fonctionnalités incluent notamment :</p>
-  <ul>
-    <li>la synchronisation de messages entre canaux ;</li>
-    <li>la création et la gestion de « groupes de synchronisation » ;</li>
-    <li>des commandes d’administration permettant de lier ou délier des salons, de bannir ou débannir des utilisateurs/serveurs, etc.</li>
-  </ul>
-  <p>Le service est fourni à titre gratuit à ce jour ; des évolutions (fonctionnalités premium, tarification, etc.) pourront être proposées ultérieurement après information préalable.</p>
+      <h2>1. Acceptation des Conditions</h2>
+      <p>En utilisant le bot Discord Everysync (« l’Application »), vous acceptez sans réserve les présentes Conditions d’Utilisation. Si vous refusez ces conditions, veuillez ne pas installer ni utiliser l’Application. Ces conditions constituent un accord légal entre vous et le développeur d’Everysync.</p>
 
-  <h2>3. Utilisation autorisée</h2>
-  <p>Vous vous engagez à utiliser l’Application de manière licite et responsable, et à respecter les règles de Discord et de vos serveurs. Il est notamment interdit de :</p>
-  <ul>
-    <li>diffuser du contenu illégal, diffamatoire ou malveillant ;</li>
-    <li>contourner les permissions ou fonctionnalités de Discord ;</li>
-    <li>perturber ou tenter de perturber le fonctionnement d’Everysync, des serveurs Discord ou d’autres services.</li>
-  </ul>
+      <h2>2. Description de l’Application</h2>
+      <p>Everysync est un bot Discord gratuit permettant de synchroniser des messages entre plusieurs serveurs ou salons. Les fonctionnalités incluent notamment :</p>
+      <ul>
+        <li>la synchronisation de messages entre canaux ;</li>
+        <li>la création et la gestion de « groupes de synchronisation » ;</li>
+        <li>des commandes d’administration permettant de lier ou délier des salons, de bannir ou débannir des utilisateurs/serveurs, etc.</li>
+      </ul>
+      <p>Le service est fourni à titre gratuit à ce jour ; des évolutions (fonctionnalités premium, tarification, etc.) pourront être proposées ultérieurement après information préalable.</p>
 
-  <h2>4. Synchronisation et responsabilité de l’administrateur</h2>
-  <p>L’Application transfère des messages entre serveurs selon les règles définies par les administrateurs.</p>
-  <ul>
-    <li>L’administrateur qui configure un groupe de synchronisation doit informer les membres concernés et, le cas échéant, recueillir leur consentement préalable.</li>
-    <li>L’administrateur doit s’assurer que la synchronisation ne viole aucune loi, ni les règles de Discord.</li>
-    <li>Everysync peut enregistrer l’ID des serveurs et salons synchronisés, ainsi que les confirmations fournies par l’administrateur.</li>
-  </ul>
+      <h2>3. Utilisation autorisée</h2>
+      <p>Vous vous engagez à utiliser l’Application de manière licite et responsable, et à respecter les règles de Discord et de vos serveurs. Il est notamment interdit de :</p>
+      <ul>
+        <li>diffuser du contenu illégal, diffamatoire ou malveillant ;</li>
+        <li>contourner les permissions ou fonctionnalités de Discord ;</li>
+        <li>perturber ou tenter de perturber le fonctionnement d’Everysync, des serveurs Discord ou d’autres services.</li>
+      </ul>
 
-  <h2>5. Données personnelles</h2>
-  <p>L’utilisation d’Everysync peut impliquer la collecte de certaines données (identifiants Discord, paramètres de configuration, journaux techniques).</p>
-  <p>Ces données sont traitées selon la Politique de Confidentialité d’Everysync, que l’utilisateur s’engage à consulter.</p>
-  <p>L’utilisateur (et l’administrateur) doivent s’assurer que toute personne concernée a été informée des transferts de messages et de ses droits (accès, suppression, opposition, etc.).</p>
-  <p>Pour toute demande relative aux données, un utilisateur peut contacter l’équipe d’Everysync via le serveur de support ou les coordonnées indiquées dans la Politique de Confidentialité.</p>
+      <h2>4. Synchronisation et responsabilité de l’administrateur</h2>
+      <p>L’Application transfère des messages entre serveurs selon les règles définies par les administrateurs.</p>
+      <ul>
+        <li>L’administrateur qui configure un groupe de synchronisation doit informer les membres concernés et, le cas échéant, recueillir leur consentement préalable.</li>
+        <li>L’administrateur doit s’assurer que la synchronisation ne viole aucune loi, ni les règles de Discord.</li>
+        <li>Everysync peut enregistrer l’ID des serveurs et salons synchronisés, ainsi que les confirmations fournies par l’administrateur.</li>
+      </ul>
 
-  <h2>6. Disponibilité et modifications du service</h2>
-  <p>L’Application est fournie « en l’état ». L’accès peut être interrompu pour maintenance, mise à jour ou pour toute raison technique ou légale. Everysync se réserve le droit de modifier ou de cesser tout ou partie du service, sans préavis ni indemnité.</p>
+      <h2>5. Données personnelles</h2>
+      <p>L’utilisation d’Everysync peut impliquer la collecte de certaines données (identifiants Discord, paramètres de configuration, journaux techniques).</p>
+      <p>Ces données sont traitées selon la Politique de Confidentialité d’Everysync, que l’utilisateur s’engage à consulter.</p>
+      <p>L’utilisateur (et l’administrateur) doivent s’assurer que toute personne concernée a été informée des transferts de messages et de ses droits (accès, suppression, opposition, etc.).</p>
+      <p>Pour toute demande relative aux données, un utilisateur peut contacter l’équipe d’Everysync via le serveur de support ou les coordonnées indiquées dans la Politique de Confidentialité.</p>
 
-  <h2>7. Propriété intellectuelle</h2>
-  <p>Le code, la documentation et toute autre ressource fournis par Everysync sont protégés par le droit d’auteur. Sauf mention contraire, ils sont la propriété du développeur d’Everysync ou de ses partenaires. Toute reproduction, distribution ou modification non autorisée est interdite.</p>
+      <h2>6. Disponibilité et modifications du service</h2>
+      <p>L’Application est fournie « en l’état ». L’accès peut être interrompu pour maintenance, mise à jour ou pour toute raison technique ou légale. Everysync se réserve le droit de modifier ou de cesser tout ou partie du service, sans préavis ni indemnité.</p>
 
-  <h2>8. Limitation de responsabilité</h2>
-  <p>Everysync est proposé sans garantie, expresse ou implicite. Le développeur ne pourra être tenu responsable des dommages directs ou indirects résultant de l’usage ou de l’impossibilité d’utiliser l’Application, y compris la perte de données ou l’interruption de service.</p>
+      <h2>7. Propriété intellectuelle</h2>
+      <p>Le code, la documentation et toute autre ressource fournis par Everysync sont protégés par le droit d’auteur. Sauf mention contraire, ils sont la propriété du développeur d’Everysync ou de ses partenaires. Toute reproduction, distribution ou modification non autorisée est interdite.</p>
 
-  <h2>9. Indemnisation</h2>
-  <p>Vous acceptez de défendre, d’indemniser et de dégager de toute responsabilité le développeur d’Everysync en cas de réclamation, perte ou dommage lié à votre utilisation de l’Application ou à votre violation des présentes Conditions.</p>
+      <h2>8. Limitation de responsabilité</h2>
+      <p>Everysync est proposé sans garantie, expresse ou implicite. Le développeur ne pourra être tenu responsable des dommages directs ou indirects résultant de l’usage ou de l’impossibilité d’utiliser l’Application, y compris la perte de données ou l’interruption de service.</p>
 
-  <h2>10. Résiliation</h2>
-  <p>Everysync ou l’administrateur de serveur peut suspendre ou retirer l’accès au bot à tout moment, notamment en cas d’usage abusif, de non-respect des règles de Discord ou de ces Conditions. Les dispositions qui, par nature, survivent à la résiliation (responsabilité, propriété intellectuelle, etc.) restent en vigueur.</p>
+      <h2>9. Indemnisation</h2>
+      <p>Vous acceptez de défendre, d’indemniser et de dégager de toute responsabilité le développeur d’Everysync en cas de réclamation, perte ou dommage lié à votre utilisation de l’Application ou à votre violation des présentes Conditions.</p>
 
-  <h2>11. Modifications des Conditions</h2>
-  <p>Everysync peut modifier ces Conditions d’Utilisation à tout moment. Les changements seront communiqués via l’Application ou le site web, et prennent effet dès leur publication. Il vous incombe de consulter régulièrement ces Conditions afin de connaître la version en vigueur.</p>
+      <h2>10. Résiliation</h2>
+      <p>Everysync ou l’administrateur de serveur peut suspendre ou retirer l’accès au bot à tout moment, notamment en cas d’usage abusif, de non-respect des règles de Discord ou de ces Conditions. Les dispositions qui, par nature, survivent à la résiliation (responsabilité, propriété intellectuelle, etc.) restent en vigueur.</p>
 
-  <h2>12. Droit applicable et juridiction</h2>
-  <p>Les présentes Conditions sont régies par les lois en vigueur en France et en Europe. Tout litige relatif à l’utilisation de l’Application sera soumis aux tribunaux compétents de France.</p>
+      <h2>11. Modifications des Conditions</h2>
+      <p>Everysync peut modifier ces Conditions d’Utilisation à tout moment. Les changements seront communiqués via l’Application ou le site web, et prennent effet dès leur publication. Il vous incombe de consulter régulièrement ces Conditions afin de connaître la version en vigueur.</p>
 
-  <h2>13. Contact</h2>
-  <ul>
-    <li>Email : pecheurfr.serv@gmail.com</li>
-    <li>Discord : <a href="https://discord.gg/72vxSsdm95" target="_blank">https://discord.gg/72vxSsdm95</a></li>
-  </ul>
-</div>
-  
-  <!-- Section Privacy Policy (contenu à modifier ultérieurement) -->
-<div id="content-privacy" class="content" style="display: none;">
-  <h1>Politique de Confidentialité d’Everysync</h1>
-  <p><small>Dernière mise à jour : 05/08/2025</small></p>
+      <h2>12. Droit applicable et juridiction</h2>
+      <p>Les présentes Conditions sont régies par les lois en vigueur en France et en Europe. Tout litige relatif à l’utilisation de l’Application sera soumis aux tribunaux compétents de France.</p>
 
-  <h2>Introduction</h2>
-  <p>Everysync est un bot Discord gratuit conçu pour synchroniser automatiquement des messages et des salons entre plusieurs serveurs Discord. Cette Politique de Confidentialité décrit les informations que nous collectons, la manière dont nous les utilisons, la base légale de ces traitements, ainsi que les mesures mises en œuvre pour protéger votre vie privée lorsque vous utilisez Everysync. En utilisant notre bot, vous acceptez les termes de cette politique.</p>
+      <h2>13. Contact</h2>
+      <ul>
+        <li>Email : pecheurfr.serv@gmail.com</li>
+        <li>Discord : <a href="https://discord.gg/72vxSsdm95" target="_blank">https://discord.gg/72vxSsdm95</a></li>
+      </ul>
+    </div>
 
-  <h2>Informations que nous collectons</h2>
-  <p>Lorsque vous interagissez avec Everysync, nous pouvons recueillir les types d’informations suivants :</p>
-  <ul>
-    <li><strong>Identifiants Discord :</strong> votre identifiant Discord (User ID), votre pseudo (tag) et d’autres informations de base issues de votre profil Discord, nécessaires au fonctionnement du bot et à la synchronisation des messages.</li>
-    <li><strong>Informations sur les serveurs et les groupes :</strong> l’identifiant du serveur (Guild ID) où le bot est utilisé, les salons ajoutés à des groupes de synchronisation et les paramètres associés (langue, nom du groupe, etc.).</li>
-    <li><strong>Paramètres de configuration :</strong> vos préférences de configuration (p. ex. la langue du bot) et les réglages de synchronisation que vous définissez via les commandes du bot.</li>
-    <li><strong>Logs et historiques d’utilisation :</strong> des informations relatives à vos interactions avec le bot (commandes exécutées, erreurs, journaux techniques) afin d’améliorer le service et d’assurer le suivi en cas de problème.</li>
-  </ul>
-  <p><em>Remarque :</em> par défaut, Everysync ne stocke pas le contenu des messages synchronisés. Seuls les identifiants nécessaires (serveur, salon, utilisateur) sont conservés, de manière à minimiser la collecte de données.</p>
+    <div class="lang lang-en" style="display:none;">
+      <h1>Everysync Terms of Service</h1>
+      <p><small>Last updated: 08/05/2025</small></p>
 
-  <h2>Base légale du traitement</h2>
-  <p>Everysync traite ces données conformément aux bases légales suivantes, selon le contexte :</p>
-  <h3>Intérêt légitime (article 6, §1, f du RGPD) :</h3>
-  <ul>
-    <li>Assurer la synchronisation de messages entre serveurs pour permettre la collaboration ou le suivi d’informations.</li>
-    <li>Garantir la sécurité, la modération et la stabilité du service.</li>
-    <li>Améliorer les fonctionnalités du bot et fournir une assistance technique.</li>
-  </ul>
-  <p>Nous veillons à ce que ces intérêts ne prévalent pas sur vos droits et libertés fondamentaux.</p>
-  <h3>Exécution d’un contrat (article 6, §1, b du RGPD) :</h3>
-  <ul>
-    <li>Lorsque vous (ou l’administrateur du serveur) utilisez des commandes spécifiques du bot ou configurez la synchronisation, ces données sont nécessaires pour fournir les fonctionnalités demandées.</li>
-    <li>En ajoutant Everysync à un serveur et en utilisant ses fonctionnalités, l’administrateur de ce serveur conclut un contrat tacite avec nous, impliquant le traitement des données strictement nécessaires à l’exécution de ces fonctionnalités.</li>
-  </ul>
+      <h2>1. Acceptance of Terms</h2>
+      <p>By using the Everysync Discord bot (the "Application"), you agree to these Terms of Service without reservation. If you do not agree, do not install or use the Application. These terms constitute a legal agreement between you and the developer of Everysync.</p>
 
-  <h2>Utilisation des informations</h2>
-  <p>Les données collectées sont utilisées pour :</p>
-  <ul>
-    <li><strong>Fournir et améliorer la synchronisation :</strong> assurer la cohérence des messages et des salons à travers les serveurs autorisés.</li>
-    <li><strong>Personnaliser l’expérience :</strong> adapter la langue et les paramètres du bot en fonction de vos préférences.</li>
-    <li><strong>Diagnostiquer et sécuriser l’application :</strong> surveiller le bon fonctionnement, détecter les anomalies, résoudre les problèmes techniques et prévenir les abus.</li>
-    <li><strong>Respecter nos obligations légales :</strong> répondre aux demandes officielles des autorités ou à d’éventuels litiges.</li>
-  </ul>
+      <h2>2. Description of the Application</h2>
+      <p>Everysync is a free Discord bot that synchronizes messages across multiple servers or channels. Features include:</p>
+      <ul>
+        <li>real-time synchronization of messages between channels;</li>
+        <li>creation and management of "synchronization groups";</li>
+        <li>administration commands to link or unlink channels, ban or unban users/servers, and more.</li>
+      </ul>
+      <p>The service is currently provided free of charge; future updates (premium features, pricing, etc.) may be introduced with prior notice.</p>
 
-  <h2>Partage et divulgation des informations</h2>
-  <p>Nous ne partageons pas vos informations personnelles avec des tiers, sauf dans les cas suivants :</p>
-  <ul>
-    <li><strong>Exigences légales :</strong> nous pouvons être amenés à divulguer certaines informations si la loi l’exige ou en réponse à une demande officielle d’autorités compétentes.</li>
-    <li><strong>Protection de nos droits :</strong> pour protéger la sécurité, l’intégrité ou les droits de l’application, de nos utilisateurs ou du public.</li>
-    <li><strong>Prestataires de services :</strong> dans la mesure où des partenaires techniques (hébergement, analytics, etc.) sont impliqués, ils ne reçoivent que les données nécessaires et sont tenus de respecter la confidentialité et les obligations prévues par le RGPD.</li>
-  </ul>
+      <h2>3. Permitted Use</h2>
+      <p>You agree to use the Application lawfully and responsibly, and to respect the rules of Discord and your servers. In particular, you must not:</p>
+      <ul>
+        <li>share illegal, defamatory, or malicious content;</li>
+        <li>bypass Discord permissions or functionality;</li>
+        <li>disrupt or attempt to disrupt Everysync, Discord servers, or other services.</li>
+      </ul>
 
-  <h2>Stockage, sécurité et transferts de données</h2>
-  <ul>
-    <li><strong>Stockage :</strong> les données sont conservées dans une base sécurisée hébergée au sein de l’Union européenne (ou dans un pays reconnu comme offrant un niveau de protection adéquat).</li>
-    <li><strong>Mesures de sécurité :</strong> nous mettons en place des mesures techniques et organisationnelles appropriées (contrôle d’accès, chiffrement, journalisation) pour éviter l’accès non autorisé, la modification ou la destruction des données.</li>
-    <li><strong>Transferts hors UE :</strong> si des données personnelles sont transférées vers un pays situé en dehors de l’EEE, nous veillons à mettre en place des garanties appropriées (clauses contractuelles types, mesures supplémentaires) pour assurer un niveau de protection adéquat.</li>
-  </ul>
+      <h2>4. Synchronization and Administrator Responsibility</h2>
+      <p>The Application transfers messages between servers under rules defined by administrators.</p>
+      <ul>
+        <li>The administrator configuring a synchronization group must inform affected members and, where necessary, obtain their prior consent.</li>
+        <li>The administrator must ensure that synchronization does not violate any laws or Discord rules.</li>
+        <li>Everysync may record the IDs of synchronized servers and channels, as well as confirmations provided by the administrator.</li>
+      </ul>
 
-  <h2>Durée de conservation</h2>
-  <p>Nous conservons vos informations aussi longtemps que nécessaire pour fournir le service, respecter nos obligations légales et résoudre les litiges éventuels.</p>
-  <ul>
-    <li><strong>Identifiants et configurations :</strong> conservés tant que le serveur utilise Everysync et que le service est jugé nécessaire.</li>
-    <li><strong>Logs d’utilisation :</strong> conservés pendant une durée limitée (généralement quelques mois) pour diagnostic et sécurité, puis supprimés ou anonymisés.</li>
-  </ul>
+      <h2>5. Personal Data</h2>
+      <p>Using Everysync may involve collecting certain data (Discord identifiers, configuration settings, technical logs).</p>
+      <p>This data is processed according to the Everysync Privacy Policy, which the user agrees to review.</p>
+      <p>Users (and administrators) must ensure that all affected individuals are informed about message transfers and their rights (access, deletion, objection, etc.).</p>
+      <p>For any data-related request, a user may contact the Everysync team through the support server or the contact information provided in the Privacy Policy.</p>
 
-  <h2>Responsabilité de l’administrateur</h2>
-  <p>L’administrateur qui ajoute Everysync à son serveur s’engage à :</p>
-  <ul>
-    <li>Informer les membres du serveur de l’usage du bot et de la synchronisation potentielle des messages.</li>
-    <li>Obtenir les consentements requis (le cas échéant) ou s’assurer qu’une autre base légale valide est utilisée.</li>
-    <li>Respecter les règles et Conditions d’utilisation de Discord.</li>
-  </ul>
-  
-  <h2>Vos droits</h2>
-  <p>En tant qu’utilisateur, vous disposez de droits concernant vos données personnelles, notamment :</p>
-  <ul>
-    <li><strong>Accès :</strong> obtenir la confirmation que nous détenons des données vous concernant et en recevoir une copie.</li>
-    <li><strong>Rectification :</strong> corriger les données inexactes ou incomplètes.</li>
-    <li><strong>Suppression :</strong> demander la suppression de vos données, sous réserve d’obligations légales de conservation.</li>
-    <li><strong>Opposition :</strong> vous opposer au traitement fondé sur l’intérêt légitime, ou retirer votre consentement lorsqu’il constitue la base du traitement.</li>
-    <li><strong>Limitation :</strong> demander que le traitement soit restreint dans certaines conditions.</li>
-  </ul>
-  <p>Pour exercer ces droits, contactez-nous à l’adresse mentionnée ci-dessous. Nous pourrons avoir besoin de vérifier votre identité pour répondre à votre demande.</p>
+      <h2>6. Service Availability and Changes</h2>
+      <p>The Application is provided "as is." Access may be interrupted for maintenance, updates, or any technical or legal reason. Everysync reserves the right to modify or discontinue all or part of the service without notice or compensation.</p>
 
-  <h2>Modifications de la Politique de Confidentialité</h2>
-  <p>Everysync se réserve le droit de modifier cette Politique de Confidentialité à tout moment. Toute modification sera communiquée via notre site web ou directement dans l’application. Les changements prennent effet dès leur publication. Il est de votre responsabilité de consulter régulièrement cette politique.</p>
+      <h2>7. Intellectual Property</h2>
+      <p>The code, documentation, and all other resources provided by Everysync are protected by copyright. Unless otherwise stated, they are the property of the Everysync developer or partners. Any unauthorized reproduction, distribution, or modification is prohibited.</p>
 
-  <h2>Contact</h2>
-  <p>Pour toute question relative à cette Politique de Confidentialité ou au traitement de vos données :</p>
-  <ul>
-    <li>Email : pecheurfr.serv@gmail.com</li>
-    <li>Discord : <a href="https://discord.gg/RKeQbT3u" target="_blank">https://discord.gg/RKeQbT3u</a></li>
-  </ul>
-</div>
-  
+      <h2>8. Limitation of Liability</h2>
+      <p>Everysync is provided without any express or implied warranty. The developer cannot be held liable for direct or indirect damages resulting from the use or inability to use the Application, including data loss or service interruptions.</p>
+
+      <h2>9. Indemnification</h2>
+      <p>You agree to defend, indemnify, and hold harmless the developer of Everysync against any claim, loss, or damage related to your use of the Application or your violation of these Terms.</p>
+
+      <h2>10. Termination</h2>
+      <p>Everysync or the server administrator may suspend or remove access to the bot at any time, particularly in case of abuse, violation of Discord rules, or these Terms. Provisions that naturally survive termination (liability, intellectual property, etc.) remain in force.</p>
+
+      <h2>11. Changes to the Terms</h2>
+      <p>Everysync may modify these Terms of Service at any time. Changes will be communicated via the Application or website and take effect upon publication. You are responsible for regularly reviewing these Terms to stay informed of the current version.</p>
+
+      <h2>12. Governing Law and Jurisdiction</h2>
+      <p>These Terms are governed by the laws of France and Europe. Any dispute related to use of the Application will be submitted to the competent courts in France.</p>
+
+      <h2>13. Contact</h2>
+      <ul>
+        <li>Email: pecheurfr.serv@gmail.com</li>
+        <li>Discord: <a href="https://discord.gg/72vxSsdm95" target="_blank">https://discord.gg/72vxSsdm95</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Privacy Policy Section -->
+  <div id="content-privacy" class="content" style="display:none;">
+    <div class="lang lang-fr">
+      <h1>Politique de Confidentialité d’Everysync</h1>
+      <p><small>Dernière mise à jour : 05/08/2025</small></p>
+
+      <h2>Introduction</h2>
+      <p>Everysync est un bot Discord gratuit conçu pour synchroniser automatiquement des messages et des salons entre plusieurs serveurs Discord. Cette Politique de Confidentialité décrit les informations que nous collectons, la manière dont nous les utilisons, la base légale de ces traitements, ainsi que les mesures mises en œuvre pour protéger votre vie privée lorsque vous utilisez Everysync. En utilisant notre bot, vous acceptez les termes de cette politique.</p>
+
+      <h2>Informations que nous collectons</h2>
+      <p>Lorsque vous interagissez avec Everysync, nous pouvons recueillir les types d’informations suivants :</p>
+      <ul>
+        <li><strong>Identifiants Discord :</strong> votre identifiant Discord (User ID), votre pseudo (tag) et d’autres informations de base issues de votre profil Discord, nécessaires au fonctionnement du bot et à la synchronisation des messages.</li>
+        <li><strong>Informations sur les serveurs et les groupes :</strong> l’identifiant du serveur (Guild ID) où le bot est utilisé, les salons ajoutés à des groupes de synchronisation et les paramètres associés (langue, nom du groupe, etc.).</li>
+        <li><strong>Paramètres de configuration :</strong> vos préférences de configuration (p. ex. la langue du bot) et les réglages de synchronisation que vous définissez via les commandes du bot.</li>
+        <li><strong>Logs et historiques d’utilisation :</strong> des informations relatives à vos interactions avec le bot (commandes exécutées, erreurs, journaux techniques) afin d’améliorer le service et d’assurer le suivi en cas de problème.</li>
+      </ul>
+      <p><em>Remarque :</em> par défaut, Everysync ne stocke pas le contenu des messages synchronisés. Seuls les identifiants nécessaires (serveur, salon, utilisateur) sont conservés, de manière à minimiser la collecte de données.</p>
+
+      <h2>Base légale du traitement</h2>
+      <p>Everysync traite ces données conformément aux bases légales suivantes, selon le contexte :</p>
+      <h3>Intérêt légitime (article 6, §1, f du RGPD) :</h3>
+      <ul>
+        <li>Assurer la synchronisation de messages entre serveurs pour permettre la collaboration ou le suivi d’informations.</li>
+        <li>Garantir la sécurité, la modération et la stabilité du service.</li>
+        <li>Améliorer les fonctionnalités du bot et fournir une assistance technique.</li>
+      </ul>
+      <p>Nous veillons à ce que ces intérêts ne prévalent pas sur vos droits et libertés fondamentaux.</p>
+      <h3>Exécution d’un contrat (article 6, §1, b du RGPD) :</h3>
+      <ul>
+        <li>Lorsque vous (ou l’administrateur du serveur) utilisez des commandes spécifiques du bot ou configurez la synchronisation, ces données sont nécessaires pour fournir les fonctionnalités demandées.</li>
+        <li>En ajoutant Everysync à un serveur et en utilisant ses fonctionnalités, l’administrateur de ce serveur conclut un contrat tacite avec nous, impliquant le traitement des données strictement nécessaires à l’exécution de ces fonctionnalités.</li>
+      </ul>
+
+      <h2>Utilisation des informations</h2>
+      <p>Les données collectées sont utilisées pour :</p>
+      <ul>
+        <li><strong>Fournir et améliorer la synchronisation :</strong> assurer la cohérence des messages et des salons à travers les serveurs autorisés.</li>
+        <li><strong>Personnaliser l’expérience :</strong> adapter la langue et les paramètres du bot en fonction de vos préférences.</li>
+        <li><strong>Diagnostiquer et sécuriser l’application :</strong> surveiller le bon fonctionnement, détecter les anomalies, résoudre les problèmes techniques et prévenir les abus.</li>
+        <li><strong>Respecter nos obligations légales :</strong> répondre aux demandes officielles des autorités ou à d’éventuels litiges.</li>
+      </ul>
+
+      <h2>Partage et divulgation des informations</h2>
+      <p>Nous ne partageons pas vos informations personnelles avec des tiers, sauf dans les cas suivants :</p>
+      <ul>
+        <li><strong>Exigences légales :</strong> nous pouvons être amenés à divulguer certaines informations si la loi l’exige ou en réponse à une demande officielle d’autorités compétentes.</li>
+        <li><strong>Protection de nos droits :</strong> pour protéger la sécurité, l’intégrité ou les droits de l’application, de nos utilisateurs ou du public.</li>
+        <li><strong>Prestataires de services :</strong> dans la mesure où des partenaires techniques (hébergement, analytics, etc.) sont impliqués, ils ne reçoivent que les données nécessaires et sont tenus de respecter la confidentialité et les obligations prévues par le RGPD.</li>
+      </ul>
+
+      <h2>Stockage, sécurité et transferts de données</h2>
+      <ul>
+        <li><strong>Stockage :</strong> les données sont conservées dans une base sécurisée hébergée au sein de l’Union européenne (ou dans un pays reconnu comme offrant un niveau de protection adéquat).</li>
+        <li><strong>Mesures de sécurité :</strong> nous mettons en place des mesures techniques et organisationnelles appropriées (contrôle d’accès, chiffrement, journalisation) pour éviter l’accès non autorisé, la modification ou la destruction des données.</li>
+        <li><strong>Transferts hors UE :</strong> si des données personnelles sont transférées vers un pays situé en dehors de l’EEE, nous veillons à mettre en place des garanties appropriées (clauses contractuelles types, mesures supplémentaires) pour assurer un niveau de protection adéquat.</li>
+      </ul>
+
+      <h2>Durée de conservation</h2>
+      <p>Nous conservons vos informations aussi longtemps que nécessaire pour fournir le service, respecter nos obligations légales et résoudre les litiges éventuels.</p>
+      <ul>
+        <li><strong>Identifiants et configurations :</strong> conservés tant que le serveur utilise Everysync et que le service est jugé nécessaire.</li>
+        <li><strong>Logs d’utilisation :</strong> conservés pendant une durée limitée (généralement quelques mois) pour diagnostic et sécurité, puis supprimés ou anonymisés.</li>
+      </ul>
+
+      <h2>Responsabilité de l’administrateur</h2>
+      <p>L’administrateur qui ajoute Everysync à son serveur s’engage à :</p>
+      <ul>
+        <li>Informer les membres du serveur de l’usage du bot et de la synchronisation potentielle des messages.</li>
+        <li>Obtenir les consentements requis (le cas échéant) ou s’assurer qu’une autre base légale valide est utilisée.</li>
+        <li>Respecter les règles et Conditions d’utilisation de Discord.</li>
+      </ul>
+      <p>Everysync conserve les confirmations données par l’administrateur lors de la configuration (date, serveur, choix des options) pour prouver qu’il a été informé de ses responsabilités.</p>
+
+      <h2>Vos droits</h2>
+      <p>En tant qu’utilisateur, vous disposez de droits concernant vos données personnelles, notamment :</p>
+      <ul>
+        <li><strong>Accès :</strong> obtenir la confirmation que nous détenons des données vous concernant et en recevoir une copie.</li>
+        <li><strong>Rectification :</strong> corriger les données inexactes ou incomplètes.</li>
+        <li><strong>Suppression :</strong> demander la suppression de vos données, sous réserve d’obligations légales de conservation.</li>
+        <li><strong>Opposition :</strong> vous opposer au traitement fondé sur l’intérêt légitime, ou retirer votre consentement lorsqu’il constitue la base du traitement.</li>
+        <li><strong>Limitation :</strong> demander que le traitement soit restreint dans certaines conditions.</li>
+      </ul>
+      <p>Pour exercer ces droits, contactez-nous à l’adresse mentionnée ci-dessous. Nous pourrons avoir besoin de vérifier votre identité pour répondre à votre demande.</p>
+
+      <h2>Modifications de la Politique de Confidentialité</h2>
+      <p>Everysync se réserve le droit de modifier cette Politique de Confidentialité à tout moment. Toute modification sera communiquée via notre site web ou directement dans l’application. Les changements prennent effet dès leur publication. Il est de votre responsabilité de consulter régulièrement cette politique.</p>
+
+      <h2>Contact</h2>
+      <p>Pour toute question relative à cette Politique de Confidentialité ou au traitement de vos données :</p>
+      <ul>
+        <li>Email : pecheurfr.serv@gmail.com</li>
+        <li>Discord : <a href="https://discord.gg/RKeQbT3u" target="_blank">https://discord.gg/RKeQbT3u</a></li>
+      </ul>
+    </div>
+
+    <div class="lang lang-en" style="display:none;">
+      <h1>Everysync Privacy Policy</h1>
+      <p><small>Last updated: 08/05/2025</small></p>
+
+      <h2>Introduction</h2>
+      <p>Everysync is a free Discord bot designed to automatically synchronize messages and channels between multiple Discord servers. This Privacy Policy describes the information we collect, how we use it, the legal basis for these processes, and the measures taken to protect your privacy when you use Everysync. By using our bot, you agree to the terms of this policy.</p>
+
+      <h2>Information We Collect</h2>
+      <p>When you interact with Everysync, we may collect the following types of information:</p>
+      <ul>
+        <li><strong>Discord identifiers:</strong> your Discord ID, username (tag), and other basic profile information necessary for the bot to operate and to synchronize messages.</li>
+        <li><strong>Server and group information:</strong> the server ID where the bot is used, channels added to synchronization groups, and associated settings (language, group name, etc.).</li>
+        <li><strong>Configuration settings:</strong> your configuration preferences (e.g., bot language) and synchronization settings defined via bot commands.</li>
+        <li><strong>Logs and usage history:</strong> information related to your interactions with the bot (executed commands, errors, technical logs) to improve the service and for troubleshooting.</li>
+      </ul>
+      <p><em>Note:</em> by default, Everysync does not store the content of synchronized messages. Only necessary identifiers (server, channel, user) are retained to minimize data collection.</p>
+
+      <h2>Legal Basis for Processing</h2>
+      <p>Everysync processes this data under the following legal bases, depending on the context:</p>
+      <h3>Legitimate Interest (Article 6(1)(f) GDPR):</h3>
+      <ul>
+        <li>Ensuring message synchronization between servers to enable collaboration or information tracking.</li>
+        <li>Guaranteeing service security, moderation, and stability.</li>
+        <li>Improving bot features and providing technical support.</li>
+      </ul>
+      <p>We ensure these interests do not override your fundamental rights and freedoms.</p>
+      <h3>Contractual Necessity (Article 6(1)(b) GDPR):</h3>
+      <ul>
+        <li>When you (or the server administrator) use specific bot commands or configure synchronization, this data is necessary to provide the requested features.</li>
+        <li>By adding Everysync to a server and using its features, the server administrator enters into an implicit contract with us, requiring the processing of data strictly necessary to execute those features.</li>
+      </ul>
+
+      <h2>How We Use Information</h2>
+      <p>The collected data is used to:</p>
+      <ul>
+        <li><strong>Provide and improve synchronization:</strong> maintain message and channel consistency across authorized servers.</li>
+        <li><strong>Personalize the experience:</strong> adapt the bot's language and settings to your preferences.</li>
+        <li><strong>Diagnose and secure the application:</strong> monitor proper operation, detect anomalies, resolve technical issues, and prevent abuse.</li>
+        <li><strong>Meet legal obligations:</strong> respond to official requests from authorities or potential disputes.</li>
+      </ul>
+
+      <h2>Sharing and Disclosure</h2>
+      <p>We do not share your personal information with third parties except in the following cases:</p>
+      <ul>
+        <li><strong>Legal requirements:</strong> we may disclose certain information if required by law or in response to official requests from competent authorities.</li>
+        <li><strong>Protection of our rights:</strong> to protect the security, integrity, or rights of the application, our users, or the public.</li>
+        <li><strong>Service providers:</strong> where technical partners (hosting, analytics, etc.) are involved, they receive only the necessary data and must respect confidentiality and GDPR obligations.</li>
+      </ul>
+
+      <h2>Storage, Security, and Data Transfers</h2>
+      <ul>
+        <li><strong>Storage:</strong> data is stored in a secure database hosted within the European Union (or a country recognized as providing adequate protection).</li>
+        <li><strong>Security measures:</strong> we implement appropriate technical and organizational measures (access controls, encryption, logging) to prevent unauthorized access, modification, or destruction of data.</li>
+        <li><strong>Transfers outside the EU:</strong> if personal data is transferred outside the EEA, we ensure appropriate safeguards (standard contractual clauses, additional measures) are in place to guarantee adequate protection.</li>
+      </ul>
+
+      <h2>Data Retention</h2>
+      <p>We retain your information as long as necessary to provide the service, meet legal obligations, and resolve potential disputes.</p>
+      <ul>
+        <li><strong>Identifiers and configurations:</strong> kept as long as the server uses Everysync and the service is deemed necessary.</li>
+        <li><strong>Usage logs:</strong> stored for a limited period (usually a few months) for diagnostics and security, then deleted or anonymized.</li>
+      </ul>
+
+      <h2>Administrator Responsibility</h2>
+      <p>The administrator who adds Everysync to their server agrees to:</p>
+      <ul>
+        <li>Inform server members about the use of the bot and the potential synchronization of messages.</li>
+        <li>Obtain required consents (if applicable) or ensure another valid legal basis is used.</li>
+        <li>Comply with Discord's rules and Terms of Service.</li>
+      </ul>
+      <p>Everysync retains confirmations provided by the administrator during setup (date, server, option choices) to demonstrate they were informed of their responsibilities.</p>
+
+      <h2>Your Rights</h2>
+      <p>As a user, you have rights regarding your personal data, including:</p>
+      <ul>
+        <li><strong>Access:</strong> obtain confirmation that we hold data about you and receive a copy.</li>
+        <li><strong>Rectification:</strong> correct inaccurate or incomplete data.</li>
+        <li><strong>Erasure:</strong> request deletion of your data, subject to legal retention obligations.</li>
+        <li><strong>Objection:</strong> object to processing based on legitimate interest or withdraw consent when it is the processing basis.</li>
+        <li><strong>Restriction:</strong> request that processing be limited in certain circumstances.</li>
+      </ul>
+      <p>To exercise these rights, contact us using the details below. We may need to verify your identity to respond to your request.</p>
+
+      <h2>Changes to the Privacy Policy</h2>
+      <p>Everysync reserves the right to modify this Privacy Policy at any time. Any changes will be communicated via our website or directly within the application. Changes take effect upon publication. It is your responsibility to review this policy regularly.</p>
+
+      <h2>Contact</h2>
+      <p>For any questions about this Privacy Policy or how we process your data:</p>
+      <ul>
+        <li>Email: pecheurfr.serv@gmail.com</li>
+        <li>Discord: <a href="https://discord.gg/RKeQbT3u" target="_blank">https://discord.gg/RKeQbT3u</a></li>
+      </ul>
+    </div>
+  </div>
+
   <script>
-    // Fonction pour afficher la section souhaitée et masquer l'autre
     function showSection(section) {
       document.getElementById('content-tos').style.display = (section === 'tos') ? 'block' : 'none';
       document.getElementById('content-privacy').style.display = (section === 'privacy') ? 'block' : 'none';
+    }
+    function setLang(lang) {
+      var frElems = document.querySelectorAll('.lang-fr');
+      var enElems = document.querySelectorAll('.lang-en');
+      if (lang === 'fr') {
+        frElems.forEach(e => e.style.display = 'block');
+        enElems.forEach(e => e.style.display = 'none');
+        document.documentElement.lang = 'fr';
+      } else {
+        frElems.forEach(e => e.style.display = 'none');
+        enElems.forEach(e => e.style.display = 'block');
+        document.documentElement.lang = 'en';
+      }
     }
   </script>
 </body>
